@@ -225,3 +225,37 @@ a{
     border-color: rgb(108, 108, 108);
 }
 
+@media only screen and (max-width: 610px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 10px 20px;
+    } 
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 10px 20px;
+    } 
+    nav img {
+        max-width: 130px;
+    }
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
