@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background:  #1a1a1a;
+    color: #ffffff;
+  }
+
+  .photo{
+    padding: 10px 5%;
+  }
+
+#profile-pic{
+    max-height: 200px;
+}  
+
+nav{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 2.5px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#work-header{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#about{
+    padding: 70px 0;
+    color:rgb(255, 255, 255);
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: 20px;
+}
+
+.about-col-1 img{
+    width: 75%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-right: 20px;
+
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+#work{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    align-self: center;
+    border: none;
+    height: 500px;
+    background-image: url(./assets/images/vecteezy_3d-background-vector-abstract-pattern-texture_10355610_851.jpg);
+    background-size: cover;
+    width: 90%;
+}
+
+#small{
+    height: 600px;
+    width: 90%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"proj2 proj3"
+    "proj4 proj5";
+}
+
+.proj1{
+    display: flex;
+    border:solid;
+    height: 500px;
+    background-image: url(./1000_F_245099474_V0a9q7Hj96z0WRFbT4I1YZ16mu2ceXl0.jpg);
+    background-size: cover;
+    width: 90%;
+}
+
+.proj1-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.proj1-container div p{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.proj1-main{
+    display: flex;
+    justify-content: center;
+}
+
+#proj1{
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/images/1000_F_245099474_V0a9q7Hj96z0WRFbT4I1YZ16mu2ceXl0.jpg);
+    background-size: cover;
+}
+
+#proj2{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/images/vecteezy_blue-led-light-with-black-background-made-by-generative-ai_22177171_137.jpg);
+    background-size: cover;
+}
+
+#proj3{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/images/vecteezy_electronic-calculator-device-with-keyboard-and-display_14826514_189.jpeg);
+    background-size: cover;
+}
+
+#proj4{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/images/vecteezy_3d-background-vector-abstract-pattern-texture_10355610_851.jpg);
+    background-size: cover;
+}
+
+#proj5{
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/images/running-athlete.png);
+    background-size: cover;
+}
+
+.proj-title {
+    position:relative;
+    top: 50px;
+    z-index: 100;
+    right: -20px;
+}
+
+#small a{
+    color:#ffffff;
+}
+
+#small a:hover{
+    opacity: 60%;
+}
+
+.contact-header{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    border-top: solid 5px;
+    padding: 20px;
+    border-color: rgb(108, 108, 108);
+}
+
